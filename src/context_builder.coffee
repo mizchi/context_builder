@@ -17,6 +17,7 @@ module.exports = class ContextBuilder
   build: (cb) ->
     jsdom.env html: @html, scripts: @scripts, done: (err, @ctx) =>
       console.warn err if err
+      @ctx.console = global.console
       @is_built = true
       cb(err)
 
