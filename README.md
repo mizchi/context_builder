@@ -37,7 +37,7 @@ env.build ->
 TestRunner is tuned for Mocha BDD Style.
 
 ```coffee
-TestEnv = require '../../src/test_env'
+{TestEnv} = require 'context_builder'
 ck = require 'coffeekup' # npm install coffeekup
 
 settings =
