@@ -1,4 +1,4 @@
-TestRunner = require '../../src/test_runner'
+TestEnv = require '../../src/test_env'
 ck = require 'coffeekup' # npm install coffeekup
 
 settings =
@@ -11,12 +11,12 @@ settings =
     "lib/backbone.js"
   ]
 
-runner = new TestRunner settings
-{_do, _async} = runner
+env = new TestEnv settings
+{_do, _async} = env
 
 describe 'hoge', ->
   beforeEach (done)->
-    runner.build done
+    env.build done
 
   it 'should have id hoge', _do ->
     ok $('#hoge').size() is  1

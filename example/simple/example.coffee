@@ -3,8 +3,6 @@ ContextBuilder = require '../../src/context_builder'
 env = new ContextBuilder
   scripts: [
     "jquery.js"
-    "underscore.js"
-    "backbone.js"
   ]
 
 env.build ->

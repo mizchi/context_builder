@@ -1,5 +1,5 @@
 ContextBuilder = require './context_builder'
-module.exports = class TestRunner extends ContextBuilder
+module.exports = class TestEnv extends ContextBuilder
   activateAssertion: ->
     @addHelper require 'assert'
   build: (done) ->

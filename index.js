@@ -1,2 +1,2 @@
-exports.TestRunner = require('./lib/test_runner');
+exports.TestEnv = require('./lib/test_env');
 exports.ContextBuilder = require('./lib/context_builder');
