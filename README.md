@@ -3,12 +3,18 @@
 This helps you to build DOM test environment without browser nor global pollution.
 
 
+## INSTALL
+
+```
+npm install context_builder
+```
+
 ## HOW TO USE
 
 TestRunner is tuned for Mocha BDD Style.
 
 ```
-TestRunner = require '../../src/test_runner'
+{TestRunner} = require 'context_builder'
 ck = require 'coffeekup' # npm install coffeekup
 
 settings =
