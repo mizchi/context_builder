@@ -60,7 +60,7 @@ describe 'hoge', ->
   it 'should have id hoge', _do ->
     ok $('#hoge').size() is  1
 
-  it 'should have id hoge', _async ->
+  it 'should callback with timeout', _async ->
     ok $('#hoge').size() is  1
     setTimeout done, 100
 
